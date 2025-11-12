@@ -54,7 +54,7 @@ const PatientManager = () => {
     if (!validateForm()) return;
     try {
       await axios.post(`${baseUrl}/add`, patient);
-      setMessage('Patient added successfully.');
+      setMessage('Patients added successfully.');
       fetchAllPatients();
       resetForm();
     } catch (error) {
